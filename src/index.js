@@ -75,11 +75,8 @@ function fetchImages(){
           li[i].classList.remove("sorted");
       }
 
-
-
-
-
   }
+}
 
   function subBreedIdentifier(array){
     return !(!Array.isArray(array) || !array.length);
