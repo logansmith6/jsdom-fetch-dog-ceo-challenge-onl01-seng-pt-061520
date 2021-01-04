@@ -42,7 +42,7 @@ function fetchImages(){
     renderBreeds(json)
   }
 
-  
+
 
 
 
