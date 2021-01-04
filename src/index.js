@@ -35,4 +35,5 @@ function fetchImages(){
 
   document.addEventListener('DOMContentLoaded', function() {
     fetchImages()
+    fetchBreeds()
   })
