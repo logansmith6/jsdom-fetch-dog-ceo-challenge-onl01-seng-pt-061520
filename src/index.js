@@ -28,7 +28,7 @@ function fetchImages(){
       li.innerHTML = `<p>${breed} </p>`
       li.classList.add("dog-breed");
       if(subBreedIdentifier(json[breed])){
-        const ul = renderDogSubBreeds(li)
+        const ul = renderDogSubBreeds(subli)
       }
       breedContainer.appendChild(li)
     }
@@ -86,9 +86,9 @@ function fetchImages(){
     const ul = document.createElement("ul");
 
     for (const subBreed of subBreeds){
-      const li = document.createElement("li");
-      li.textContent = subBreed;
-      ul.appendChild(li);
+      const subli = document.createElement("li");
+      subli.textContent = subBreed;
+      ul.appendChild(subli);
     }
   }
 
