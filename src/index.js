@@ -63,7 +63,7 @@ function fetchImages(){
     const newList = breedList.cloneNode(false);
        filterList = Array.from(breedList.childNodes);
 
-    for (const li of filterList) {
+    for (const selectLi of filterList) {
       if (li.textContent[0] != alpha) {
           li.classList.add("sorted");
         } else {
