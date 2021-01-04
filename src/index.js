@@ -19,7 +19,7 @@ function fetchImages(){
         imageContainer.appendChild(img)
       })
 
-  
+
   }
 
 
