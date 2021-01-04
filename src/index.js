@@ -18,7 +18,7 @@ function fetchImages(){
   function fetchBreeds(){
     return fetch('https://dog.ceo/api/breeds/list/all')
       .then(response => response.json())
-      .then(json => renderBreeds(json.message));
+      .then(json => renderBreedsAndClick(json.message));
   }
 
   function renderBreeds(json){
@@ -29,6 +29,10 @@ function fetchImages(){
       li.classList.add("dog-breed");
       breedContainer.appendChild(li)
     }
+  }
+
+  function renderBreedsAndClick(){
+    renderBreeds(json)
   }
 
 
