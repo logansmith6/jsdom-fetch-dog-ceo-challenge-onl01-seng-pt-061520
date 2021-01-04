@@ -46,6 +46,7 @@ function fetchImages(){
 
   function renderBreedsAndClick(json){
     renderBreeds(json)
+    clickChangeColor()
   }
 
 
