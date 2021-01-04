@@ -39,7 +39,7 @@ function fetchImages(){
           li[i].addEventListener('click', function(){
             target.classList.add("clr-blue")
           })
-          
+
         }
 
   }
