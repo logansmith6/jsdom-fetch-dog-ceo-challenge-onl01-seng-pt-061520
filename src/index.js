@@ -50,7 +50,7 @@ function fetchImages(){
 
   function listenForSort(){
       const li = document.getElementById("breed-dropdown");
-        li.addEventListener("change", dogBreedSelect);
+        li.addEventListener("change", userSelection);
   }
 
   function userSelection(x){
