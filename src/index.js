@@ -64,12 +64,13 @@ function fetchImages(){
 
   function sortBreeds(alpha){
     const breedList = document.getElementById("dog-breeds");
+    const li =  document.querySelectorAll(".dog-breed > p");
 
     filterList = Array.from(breedList.childNodes);
 
     for (i = 0; i < filterList.length; i++){
 
-      if (const li[i].textContent[0] != alpha) {
+      if (li[i].textContent[0] != alpha) {
           li[i].classList.add("sorted");
         } else {
           li[i].classList.remove("sorted");
