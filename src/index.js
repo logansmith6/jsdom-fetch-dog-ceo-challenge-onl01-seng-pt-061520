@@ -86,7 +86,7 @@ function fetchImages(){
     const ul = document.createElement("ul");
 
     for (const subBreed of subBreeds){
-      const li = docment.createElement("li");
+      const li = document.createElement("li");
       li.textContent = subBreed;
       ul.appendChild(li);
     }
