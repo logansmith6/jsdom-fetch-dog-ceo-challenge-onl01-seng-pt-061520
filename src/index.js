@@ -70,7 +70,7 @@ function fetchImages(){
           selectLi.classList.remove("sorted");
         }
 
-    newList.appendChild(li);
+    newList.appendChild(selectLi);
     }
     breedList.parentNode.replaceChild(newList, breedList);
   }
