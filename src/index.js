@@ -23,12 +23,12 @@ function fetchImages(){
 
   function renderBreeds(json){
     const breedContainer = document.getElementById('dog-breeds');
-    json.forEach(breed => {
+    for (const breed in json) {
       const li = document.createElement('li')
       li.innerHTML = `<p>${json}</p>`
       li.classList.add("dog-breed");
       breedContainer.appendChild(li)
-    })
+    }
   }
 
 
