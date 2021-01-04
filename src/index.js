@@ -55,7 +55,8 @@ function fetchImages(){
   function listenForSort(){
       const selectOne = document.getElementById("breed-dropdown");
         selectOne.addEventListener("change", function(x){
-          const alpha = x.target.value;
+
+          const alpha = document.getElementById('breed-dropdown').value;
           sortBreeds(alpha);
           console.log(x)
         });
