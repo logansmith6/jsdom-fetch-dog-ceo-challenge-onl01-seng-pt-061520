@@ -75,7 +75,7 @@ function fetchImages(){
       if (li[i].textContent[0] != alpha) {
           li[i].style.visibility = "visible";
         } else {
-          li[i].style.visibility = "visible";
+          li[i].style.visibility = "hidden";
       }
 
   }
