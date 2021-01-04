@@ -12,13 +12,16 @@ function fetchImages(){
 
 
   function addImages(json){
-
+    let arrayItems = [];
+    arrayItems = JSON.parse(json)
     const div = document.getElementById('dog-image-container');
-    json.forEach(image => {
-      const h2 = document.createElement('img')
-        img.innerHTML = image
-        div.appendChild(img)
-    })
+
+    for (i = 0; i <= arrayItems.length - 1; i++ ){
+      let img = document.createElement('img');
+      img.src = arrayItems[i].Image;
+      div.appendChild(img);
+
+    }
   }
 
 
