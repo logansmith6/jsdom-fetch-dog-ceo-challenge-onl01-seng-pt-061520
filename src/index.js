@@ -85,7 +85,7 @@ function fetchImages(){
     for (const subBreed of subBreeds){
       const li = docment.createElement("li");
       li.textContent = subBreed;
-      li.appendChild = (li);
+      li.appendChild(li);
     }
   }
 
