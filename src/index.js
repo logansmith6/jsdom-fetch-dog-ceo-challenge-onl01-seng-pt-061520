@@ -40,7 +40,7 @@ function fetchImages(){
             target.classList.add("clr-blue")
             }
           })
-        }
+
   }
 
   function renderBreedsAndClick(json){
