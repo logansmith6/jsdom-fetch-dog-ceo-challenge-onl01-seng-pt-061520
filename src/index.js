@@ -18,12 +18,12 @@ function fetchImages(){
   function fetchBreeds(){
     return fetch('https://dog.ceo/api/breeds/list/all')
       .then(response => response.json())
-      .then(breeds => renderBreeds(breeds.message));
+      .then(json => renderBreeds(json.message));
   }
 
-  function renderBreeds(breeds){
+  function renderBreeds(json){
     const breedContainer = document.getElementById('dog-breeds');
-    breeds.forEach(breed => {
+    json.forEach(breed => {
       const li = document.createElement('li')
       li.innerHTML = breed;
       breedContainer.appendChild(li)
