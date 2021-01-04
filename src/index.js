@@ -73,9 +73,9 @@ function fetchImages(){
     for (i = 0; i < li.length; i++){
 
       if (li[i].textContent[0] != alpha) {
-          li[i].style.display = "none";
+          li[i].style.visibility = "hidden";
         } else {
-          li[i].classList.remove("sorted");
+          li[i].style.visibility = "visible";
       }
 
   }
