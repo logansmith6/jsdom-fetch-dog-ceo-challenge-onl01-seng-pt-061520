@@ -64,17 +64,15 @@ function fetchImages(){
     const filterList = Array.from(breedList.childNodes);
 
     for (const li of filterList) {
-    if (li.textContent[0] != letter) {
-        li.classList.add("filtered");
-    } else {
-      li.classList.remove("filtered");
+      if (li.textContent[0] != letter) {
+          li.classList.add("sorted");
+        } else {
+          li.classList.remove("sorted");
+        }
+
+    newList.appendChild(li);
     }
-
-    newBreedList.appendChild(breedListItemNode);
-  }
-
-
-
+    breedList.parentNode.replaceChild(newList, breedList);
   }
 
 
