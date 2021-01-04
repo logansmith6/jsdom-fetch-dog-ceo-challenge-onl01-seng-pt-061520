@@ -36,8 +36,8 @@ function fetchImages(){
 
         for (i = 0; i < li.length; i++){
 
-          li[i].addEventListener("click", function(){
-            this.body.style.color = "purple";
+          li[i].addEventListener("click", function(test){
+            test.target.style.color = "purple";
           })
         }
   }
