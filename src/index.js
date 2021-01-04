@@ -23,9 +23,9 @@ function fetchImages(){
 
   function renderBreeds(breeds){
     const breedContainer = document.getElementById('dog-breeds');
-    breed.forEach(breed => {
+    breeds.forEach(breed => {
       const list = document.createElement('li')
-      li.innerHTML = breed;
+      li.innerHTML = breed.breed;
       breedContainer.appendChild(li)
     })
   }
