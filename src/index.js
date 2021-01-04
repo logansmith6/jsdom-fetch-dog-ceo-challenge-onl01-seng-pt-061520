@@ -91,6 +91,7 @@ function fetchImages(){
       subli.textContent = subBreed;
       ul.appendChild(subli);
     }
+    return ul;
   }
 
 
