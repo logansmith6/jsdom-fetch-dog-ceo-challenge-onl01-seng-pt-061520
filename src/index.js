@@ -25,15 +25,24 @@ function fetchImages(){
     const breedContainer = document.getElementById('dog-breeds');
     for (const breed in json) {
       const li = document.createElement('li')
-      li.innerHTML = `<p>${breed}</p>`
+      li.innerHTML = `<p>${breed} onclick="func()"</p>`
       li.classList.add("dog-breed");
       breedContainer.appendChild(li)
     }
   }
 
+  function clickChangeColor(){
+    const allBreeds = document.querySelectorAll(".dog-breed > p");
+            for (let i = 0; i < allBreeds.length; i++){
+              allbreeds
+            }
+  }
+
   function renderBreedsAndClick(json){
     renderBreeds(json)
   }
+
+  
 
 
 
