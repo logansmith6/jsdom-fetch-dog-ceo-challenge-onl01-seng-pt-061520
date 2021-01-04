@@ -61,7 +61,7 @@ function fetchImages(){
   function sortBreeds(alpha){
     const breedList = document.getElementById("dog-breeds");
     const newList = breedList.cloneNode(false);
-    const filterList = Array.from(breedList.childNodes);
+       filterList = Array.from(breedList.childNodes);
 
     for (const li of filterList) {
       if (li.textContent[0] != alpha) {
