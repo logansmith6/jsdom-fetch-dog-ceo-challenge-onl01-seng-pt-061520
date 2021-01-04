@@ -38,9 +38,9 @@ function fetchImages(){
           let tryP = listItems.getElemetsByTagName("p");
           tryP.addEventListener('click', function(){
             if(this.classList.contains('active')){
-              this.classList.remove('active');
+              this.classList.remove("active");
             } else {
-              this.classList.add('active');
+              this.classList.add("active");
             }
           })
         }
