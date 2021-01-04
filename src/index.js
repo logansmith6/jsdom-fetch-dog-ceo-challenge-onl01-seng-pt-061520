@@ -47,14 +47,15 @@ function fetchImages(){
     clickChangeColor()
   }
 
-  function userSelection(x){
-    const alpha = x.target.value;
-    sortBreeds(alpha);
-  }
 
   function listenForSort(){
       const currentSelection = document.getElementById("breed-dropdown");
       currentSelection.addEventListener("change", userSelection)
+  }
+
+  function userSelection(x){
+    const alpha = x.target.value;
+    sortBreeds(alpha);
   }
 
   function sortBreeds(alpha){
