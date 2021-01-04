@@ -59,7 +59,7 @@ function fetchImages(){
   }
 
   function sortBreeds(alpha){
-    const breedList = document.querySelectorAll(".dog-breed > p");
+    const breedList = document.querySelectorAll(".dog-breed > p".text);
 
 
     const sortedList = breedList.filter(breed => breed.startsWith(alpha));
