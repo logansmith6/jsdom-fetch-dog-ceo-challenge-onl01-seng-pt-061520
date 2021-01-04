@@ -66,10 +66,10 @@ function fetchImages(){
   }
 
   function sortBreeds(alpha){
-    
+
     const li =  document.querySelectorAll(".dog-breed > p");
 
-    
+
 
     for (i = 0; i < filterList.length; i++){
 
