@@ -36,7 +36,7 @@ function fetchImages(){
 
         for (li of listItems){
           let tryP = listItems.getElemetsByTagName("p");
-          tryP.addEventListener('click', function(){
+          li.addEventListener('click', function(){
             if(this.classList.contains('active')){
               this.classList.remove("active");
             } else {
