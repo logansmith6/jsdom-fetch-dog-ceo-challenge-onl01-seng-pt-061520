@@ -64,7 +64,7 @@ function fetchImages(){
     const filterList = Array.from(breedList.childNodes);
 
     for (const li of filterList) {
-      if (li.textContent[0] != letter) {
+      if (li.textContent[0] != alpha) {
           li.classList.add("sorted");
         } else {
           li.classList.remove("sorted");
