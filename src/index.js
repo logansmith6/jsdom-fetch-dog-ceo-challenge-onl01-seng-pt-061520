@@ -65,7 +65,7 @@ function fetchImages(){
 
     for (const selectLi of filterList) {
       if (selectLi.textContent[0] != alpha) {
-          li.classList.add("sorted");
+          selectLi.classList.add("sorted");
         } else {
           li.classList.remove("sorted");
         }
