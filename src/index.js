@@ -72,7 +72,7 @@ function fetchImages(){
 
     newBreedList.appendChild(breedListItemNode);
   }
-    
+
 
 
   }
