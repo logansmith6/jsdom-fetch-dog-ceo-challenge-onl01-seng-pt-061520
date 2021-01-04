@@ -37,10 +37,7 @@ function fetchImages(){
         for (i = 0; i < li.length; i++){
 
           li[i].addEventListener('click', function(){
-            if(this.classList.contains('active')){
-              this.classList.remove("active");
-            } else {
-              this.classList.add("active");
+            target.classList.add("clr-blue")
             }
           })
         }
