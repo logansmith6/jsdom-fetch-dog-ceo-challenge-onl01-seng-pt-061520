@@ -64,7 +64,7 @@ function fetchImages(){
 
   function sortBreeds(alpha){
     const breedList = document.getElementById("dog-breeds");
-    
+
     filterList = Array.from(breedList.childNodes);
 
     for (i = 0; i < filterList.length; i++){
@@ -74,11 +74,11 @@ function fetchImages(){
         } else {
           li[i].classList.remove("sorted");
       }
-    
 
 
-    
-    
+
+
+
   }
 
   function subBreedIdentifier(array){
