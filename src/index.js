@@ -31,7 +31,7 @@ function fetchImages(){
     }
   }
 
-  function renderBreedsAndClick(){
+  function renderBreedsAndClick(json){
     renderBreeds(json)
   }
 
