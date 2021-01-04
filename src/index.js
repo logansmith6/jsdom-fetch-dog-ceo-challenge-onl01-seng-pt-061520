@@ -55,7 +55,7 @@ function fetchImages(){
     const breedList = document.getElementById("dog-breeds");
     const pickOne = breedList.filter(breed => breed.startsWith(alpha));
     console.log(pickOne);
-    
+
   }
 
 
