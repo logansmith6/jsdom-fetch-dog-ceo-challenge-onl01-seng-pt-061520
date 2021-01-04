@@ -60,8 +60,13 @@ function fetchImages(){
 
   function sortBreeds(alpha){
     const breedList = document.getElementById("dog-breeds");
-    const pickOne = breedList.filter(breed => breed.startsWith(alpha));
-    console.log(pickOne);
+    const cloneList = breedList.cloneNode(false);
+
+    const sortedList = breedList.filter(breed => breed.startsWith(alpha));
+    breedList.parentNode.replaceChild(sortedList, breedList);
+
+    
+    
 
   }
 
