@@ -73,7 +73,7 @@ function fetchImages(){
           li[i].classList.add("sorted");
         } else {
           li[i].classList.remove("sorted");
-      })
+      }
     }
 
 
