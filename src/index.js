@@ -42,9 +42,7 @@ function fetchImages(){
         }
   }
 
-  function changeColor (test){
-    test.target.classList.toggle("active")
-  }
+
 
   function renderBreedsAndClick(json){
     renderBreeds(json)
