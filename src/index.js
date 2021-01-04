@@ -51,6 +51,12 @@ function fetchImages(){
     const alpha = x.target.value;
     sortBreeds(alpha);
   }
+
+  function listenForSort(){
+      const currentSelection = document.getElementById("breed-dropdown");
+      currentSelection.addEventListener("change", userSelection)
+  }
+
   function sortBreeds(alpha){
     const breedList = document.getElementById("dog-breeds");
     const pickOne = breedList.filter(breed => breed.startsWith(alpha));
