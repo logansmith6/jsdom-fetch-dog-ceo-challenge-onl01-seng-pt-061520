@@ -33,9 +33,9 @@ function fetchImages(){
 
   function clickChangeColor(){
       const ul =  document.getElementById('dog-breeds');
-      const listItems = ul.getElementsByTagName("li");
-        for (li of listItems){
-          li.addEventListener('click', function(){
+      const listItems = ul.getElementsByTagName("p");
+        for (p of listItems){
+          p.addEventListener('click', function(){
             if(this.classList.contains('active')){
               this.classList.remove('active');
             } else {
