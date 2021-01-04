@@ -57,6 +57,7 @@ function fetchImages(){
         selectOne.addEventListener("change", function(x){
           const alpha = x.target.value;
           sortBreeds(alpha);
+          console.log(x)
         });
   }
 
