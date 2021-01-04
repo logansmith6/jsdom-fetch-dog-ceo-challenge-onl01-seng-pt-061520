@@ -35,7 +35,7 @@ function fetchImages(){
       const ul =  document.getElementById('dog-breeds');
       const listItems = ul.getElementsByTagName("li");
         for (li of listItems){
-          li.addEventListener('click'function(){
+          li.addEventListener('click', function(){
             if(this.classList.contains('active')){
               this.classList.remove('active');
             } else {
