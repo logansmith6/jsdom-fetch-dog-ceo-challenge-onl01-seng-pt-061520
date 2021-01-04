@@ -27,6 +27,9 @@ function fetchImages(){
       const li = document.createElement('li')
       li.innerHTML = `<p>${breed} </p>`
       li.classList.add("dog-breed");
+      if(subBreedIdentifier(breeds[breed])){
+        const ul = renderDogSubBreeds(li)
+      }
       breedContainer.appendChild(li)
     }
   }
@@ -79,7 +82,7 @@ function fetchImages(){
     return !(!Array.isArray(array) || !array.length);
   }
 
-  function renderDogSubBreedds(subBreeds){
+  function renderDogSubBreeds(subBreeds){
     const ul = document.createElement("ul");
 
     for (const subBreed of subBreeds){
