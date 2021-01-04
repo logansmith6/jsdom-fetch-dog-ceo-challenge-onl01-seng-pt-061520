@@ -34,7 +34,7 @@ function fetchImages(){
   function clickChangeColor(){
       const li =  document.querySelectorAll(".dog-breed > p");
 
-        for (li of listItems){
+        for (i = 0; i < li.length; i++){
           let tryP = listItems.getElemetsByTagName("p");
           li.addEventListener('click', function(){
             if(this.classList.contains('active')){
