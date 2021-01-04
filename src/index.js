@@ -62,7 +62,7 @@ function fetchImages(){
     const breedList = document.getElementById("dog-breeds");
     const cloneList = breedList.cloneNode(false);
 
-    const sortedList = breedList.filter(breed => breed.startsWith(alpha));
+    const sortedList = breedList.childNodes.filter(breed => breed.startsWith(alpha));
     breedList.parentNode.replaceChild(sortedList, breedList);
 
 
