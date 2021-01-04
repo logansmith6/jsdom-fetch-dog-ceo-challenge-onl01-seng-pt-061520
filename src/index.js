@@ -58,7 +58,7 @@ function fetchImages(){
 
           const alpha = document.getElementById('breed-dropdown').value;
           sortBreeds(alpha);
-          console.log(x)
+          console.log(alpha)
         });
   }
 
