@@ -80,12 +80,12 @@ function fetchImages(){
   }
 
   function renderDogSubBreedds(subBreeds){
-    const li = document.createElement("ul");
+    const ul = document.createElement("ul");
 
     for (const subBreed of subBreeds){
       const li = docment.createElement("li");
       li.textContent = subBreed;
-      li.appendChild(li);
+      ul.appendChild(li);
     }
   }
 
