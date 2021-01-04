@@ -15,7 +15,7 @@ function fetchImages(){
 
       json.forEach(image => {
         const img = document.createElement('img')
-        img.src = image.imageUrl;
+        img.src = image.Image;
         imageContainer.appendChild(img)
       })
 
