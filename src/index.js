@@ -77,14 +77,6 @@ function fetchImages(){
     }
 
 
-
-    for (const li of filterList) {
-      if (li.textContent[0] != alpha) {
-          li.classList.add("sorted");
-        } else {
-          li.classList.remove("sorted");
-        }
-
     newList.appendChild(li);
     }
     breedList.parentNode.replaceChild(newList, breedList);
