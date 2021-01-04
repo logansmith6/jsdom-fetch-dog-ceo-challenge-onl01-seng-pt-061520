@@ -25,17 +25,24 @@ function fetchImages(){
     const breedContainer = document.getElementById('dog-breeds');
     for (const breed in json) {
       const li = document.createElement('li')
-      li.innerHTML = `<p onclick="clickChangeColor()">${breed} </p>`
+      li.innerHTML = `<p>${breed} </p>`
       li.classList.add("dog-breed");
       breedContainer.appendChild(li)
     }
   }
 
   function clickChangeColor(){
-    const allBreeds = document.querySelectorAll(".dog-breed > p");
-            for (let i = 0; i < allBreeds.length; i++){
-              allbreeds
+      const ul =  document.getElementById('dog-breeds');
+      const listItems = ul.getElementsByTagName("li");
+        for (li of listItems){
+          li.addEventListener('click'function(){
+            if(this.classList.contains('active')){
+              this.classList.remove('active');
+            } else {
+              this.classList.add('active');
             }
+          })
+        }
   }
 
   function renderBreedsAndClick(json){
