@@ -65,8 +65,8 @@ function fetchImages(){
     const sortedList = breedList.filter(breed => breed.startsWith(alpha));
     breedList.parentNode.replaceChild(sortedList, breedList);
 
-    
-    
+
+
 
   }
 
