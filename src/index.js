@@ -64,7 +64,7 @@ function fetchImages(){
 
   function sortBreeds(alpha){
     const breedList = document.getElementById("dog-breeds");
-    const newList = breedList.cloneNode(false);
+    
     filterList = Array.from(breedList.childNodes);
 
     for (i = 0; i < filterList.length; i++){
@@ -74,12 +74,11 @@ function fetchImages(){
         } else {
           li[i].classList.remove("sorted");
       }
-    }
+    
 
 
-    newList.appendChild(li);
-    }
-    breedList.parentNode.replaceChild(newList, breedList);
+    
+    
   }
 
   function subBreedIdentifier(array){
