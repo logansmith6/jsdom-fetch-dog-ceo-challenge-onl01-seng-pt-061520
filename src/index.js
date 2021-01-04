@@ -62,7 +62,7 @@ function fetchImages(){
         });
   }
 
-  
+
 
   function sortBreeds(alpha){
 
