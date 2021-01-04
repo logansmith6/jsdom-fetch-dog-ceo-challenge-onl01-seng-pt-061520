@@ -62,10 +62,7 @@ function fetchImages(){
         });
   }
 
-  function userSelection(x){
-    const alpha = x.target.value;
-    sortBreeds(alpha);
-  }
+  
 
   function sortBreeds(alpha){
 
@@ -76,11 +73,22 @@ function fetchImages(){
     for (i = 0; i < li.length; i++){
 
       if (li[i].textContent[0] != alpha) {
-          li[i].classList.add("sorted");
+          li[i].style.display = "none";
         } else {
           li[i].classList.remove("sorted");
       }
 
+  }
+  const breedContainer = document.getElementById('dog-breeds');
+  for (const breed in json) {
+    const li = document.createElement('li')
+    li.innerHTML = `<p>${breed} </p>`
+    li.classList.add("dog-breed");
+    if(subBreedIdentifier(json[breed])){
+      const ul = renderDogSubBreeds(json[breed]);
+      li.appendChild(ul);
+    }
+    breedContainer.appendChild(li)
   }
 }
 
