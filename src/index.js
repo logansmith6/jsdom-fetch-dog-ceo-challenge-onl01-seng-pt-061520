@@ -18,7 +18,7 @@ function fetchImages(){
   function fetchBreeds(){
     return fetch('https://dog.ceo/api/breeds/list/all')
       .then(response => response.json())
-      .then(breeds => renderBreeds(breeds.message));
+      .then(breeds => renderBreeds(breeds));
   }
 
   function renderBreeds(breeds){
