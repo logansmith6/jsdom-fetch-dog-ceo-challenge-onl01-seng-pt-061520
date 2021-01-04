@@ -15,7 +15,7 @@ function fetchImages(){
     const div = document.getElementById('dog-image-container');
     json.forEach(image => {
       const h2 = document.createElement('img')
-        img.innerHTML = image.src
+        img.innerHTML = image
         div.appendChild(img)
     })
   }
