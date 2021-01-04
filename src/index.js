@@ -32,7 +32,7 @@ function fetchImages(){
   }
 
   function clickChangeColor(){
-      const li =  document.querySelectorAll(".dog-breed > p");
+      const li =  document.querySelectorAll(".dog-breeds > p");
 
         for (i = 0; i < li.length; i++){
 
