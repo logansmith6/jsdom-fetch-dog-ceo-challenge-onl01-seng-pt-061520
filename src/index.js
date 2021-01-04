@@ -11,7 +11,8 @@ function fetchImages(){
 
 
 
-  function addImages(){
+  function addImages(json){
+    arrItems =
     const div = document.getElementById('dog-image-container');
     json.forEach(image => {
       const h2 = document.createElement('img')
