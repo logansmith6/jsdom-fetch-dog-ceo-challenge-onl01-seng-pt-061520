@@ -42,11 +42,20 @@ function fetchImages(){
         }
   }
 
-
-
   function renderBreedsAndClick(json){
     renderBreeds(json)
     clickChangeColor()
+  }
+
+  function userSelection(x){
+    const alpha = x.target.value;
+    sortBreeds(alpha);
+  }
+  function sortBreeds(alpha){
+    const breedList = document.getElementById("dog-breeds");
+    const pickOne = breedList.filter(breed => breed.startsWith(alpha));
+    console.log(pickOne);
+    
   }
 
 
