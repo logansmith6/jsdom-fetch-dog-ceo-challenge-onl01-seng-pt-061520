@@ -25,7 +25,8 @@ function fetchImages(){
     const breedContainer = document.getElementById('dog-breeds');
     json.forEach(breed => {
       const li = document.createElement('li')
-      li.innerHTML = breed;
+      li.innerHTML = `<p>${json}</p>`
+      li.classList.add("dog-breed");
       breedContainer.appendChild(li)
     })
   }
