@@ -54,7 +54,10 @@ function fetchImages(){
 
   function listenForSort(){
       const selectOne = document.getElementById("breed-dropdown");
-        selectOne.addEventListener("change", userSelection);
+        selectOne.addEventListener("change", function(test){
+          const alpha = x.target.value;
+          sortBreeds(alpha);
+        });
   }
 
   function userSelection(x){
@@ -63,10 +66,10 @@ function fetchImages(){
   }
 
   function sortBreeds(alpha){
-    const breedList = document.getElementById("dog-breeds");
+
     const li =  document.querySelectorAll(".dog-breed > p");
 
-    filterList = Array.from(breedList.childNodes);
+
 
     for (i = 0; i < filterList.length; i++){
 
