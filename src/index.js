@@ -41,7 +41,7 @@ function fetchImages(){
   }
 
   function changeColor (test){
-    test.target.classList.add("clr-red")
+    test.target.classList.add("active")
   }
 
   function renderBreedsAndClick(json){
