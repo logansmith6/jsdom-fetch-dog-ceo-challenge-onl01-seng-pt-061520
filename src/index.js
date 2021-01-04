@@ -71,7 +71,7 @@ function fetchImages(){
 
 
 
-    for (i = 0; i < filterList.length; i++){
+    for (i = 0; i < li.length; i++){
 
       if (li[i].textContent[0] != alpha) {
           li[i].classList.add("sorted");
