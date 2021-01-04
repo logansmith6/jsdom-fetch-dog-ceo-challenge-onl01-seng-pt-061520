@@ -32,16 +32,16 @@ function fetchImages(){
   }
 
   function clickChangeColor(){
-      const li =  document.querySelectorAll(".dog-breed > li");
+      const li =  document.querySelectorAll(".dog-breed > p");
 
         for (i = 0; i < li.length; i++){
 
-          li[i].text.addEventListener("click", changeColor)
+          li[i].addEventListener("click", changeColor)
         }
   }
 
   function changeColor (test){
-    test.target.classList.add("active")
+    test.target.classList.toggle("active")
   }
 
   function renderBreedsAndClick(json){
