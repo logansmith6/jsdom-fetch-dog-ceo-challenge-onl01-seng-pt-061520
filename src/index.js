@@ -27,7 +27,7 @@ function fetchImages(){
       const li = document.createElement('li')
       li.innerHTML = `<p>${breed} </p>`
       li.classList.add("dog-breed");
-      if(subBreedIdentifier(breeds[breed])){
+      if(subBreedIdentifier(json[breed])){
         const ul = renderDogSubBreeds(li)
       }
       breedContainer.appendChild(li)
