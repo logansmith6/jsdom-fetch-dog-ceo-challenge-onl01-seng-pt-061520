@@ -36,12 +36,12 @@ function fetchImages(){
 
         for (i = 0; i < li.length; i++){
 
-          li[i].addEventListener('click', function(){
-            li[i].classList.add("clr-blue")
-          })
-
+          li[i].addEventListener('click', changeColor)
         }
+  }
 
+  function changeColor (test){
+    test.target.classList.add("clr-red")
   }
 
   function renderBreedsAndClick(json){
