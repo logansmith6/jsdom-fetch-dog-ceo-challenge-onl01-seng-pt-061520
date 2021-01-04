@@ -73,23 +73,13 @@ function fetchImages(){
     for (i = 0; i < li.length; i++){
 
       if (li[i].textContent[0] != alpha) {
-          li[i].style.visibility = "visible";
-        } else {
           li[i].style.visibility = "hidden";
+        } else {
+          li[i].style.visibility = "visible";
       }
 
   }
-  const breedContainer = document.getElementById('dog-breeds');
-  for (const breed in json) {
-    const li = document.createElement('li')
-    li.innerHTML = `<p>${breed} </p>`
-    li.classList.add("dog-breed");
-    if(subBreedIdentifier(json[breed])){
-      const ul = renderDogSubBreeds(json[breed]);
-      li.appendChild(ul);
-    }
-    breedContainer.appendChild(li)
-  }
+
 }
 
   function subBreedIdentifier(array){
