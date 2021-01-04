@@ -76,7 +76,7 @@ function fetchImages(){
   }
 
   function subBreedIdentifier(array){
-    return !(!Array.isArray(array) || !.array.length);
+    return !(!Array.isArray(array) || !array.length);
   }
 
   function renderDogSubBreedds(subBreeds){
