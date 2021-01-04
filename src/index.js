@@ -59,13 +59,20 @@ function fetchImages(){
   }
 
   function sortBreeds(alpha){
-    const breedList = document.querySelectorAll(".dog-breed > p");
+    const breedList = document.getElementById("dog-breeds");
+    const newList = breedList.cloneNode(false);
+    const filterList = Array.from(breedList.childNodes);
 
+    for (const li of filterList) {
+    if (li.textContent[0] != letter) {
+        li.classList.add("filtered");
+    } else {
+      li.classList.remove("filtered");
+    }
 
-    const sortedList = breedList.filter(breed => breed.startsWith(alpha));
-    breedList.parentNode.replaceChild(sortedList, breedList);
-
-
+    newBreedList.appendChild(breedListItemNode);
+  }
+    
 
 
   }
