@@ -67,7 +67,7 @@ function fetchImages(){
       if (selectLi.textContent[0] != alpha) {
           selectLi.classList.add("sorted");
         } else {
-          li.classList.remove("sorted");
+          selectLi.classList.remove("sorted");
         }
 
     newList.appendChild(li);
